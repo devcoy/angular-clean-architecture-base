@@ -11,4 +11,4 @@ const childRoutes: Routes = [
     imports: [RouterModule.forChild(childRoutes)],
     exports: [RouterModule]
 })
-export class ChildRoutesModule {}
+export class PublicChildRoutesModule {}

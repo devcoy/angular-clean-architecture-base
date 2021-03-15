@@ -9,8 +9,8 @@ const routes: Routes = [
         component: PublicComponent,
 
         loadChildren: () =>
-            import('./child-routes.module').then(
-                (module) => module.ChildRoutesModule
+            import('./public-child-routes.module').then(
+                (module) => module.PublicChildRoutesModule
             )
     }
 ];
