@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PublicModule } from './@public/public.module';
 
 const routes: Routes = [
-    { path: '', redirectTo: 'public', pathMatch: 'full' }
+    { path: '', redirectTo: '', pathMatch: 'full' }
     //   { path: '**', component: NopagefoundComponent },
 ];
 
