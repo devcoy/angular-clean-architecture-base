@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { PublicModule } from './@public/public.module';
+import { AdminRoutingModule } from './@admin/admin.routing';
 
 const routes: Routes = [
     { path: '', redirectTo: '', pathMatch: 'full' }
@@ -11,7 +12,11 @@ const routes: Routes = [
 
 @NgModule({
     declarations: [],
-    imports: [RouterModule.forRoot(routes), PublicRoutingModule],
+    imports: [
+        RouterModule.forRoot(routes),
+        PublicRoutingModule,
+        AdminRoutingModule
+    ],
     exports: [RouterModule]
 })
 export class AppRoutingModule {}
