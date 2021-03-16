@@ -5,9 +5,10 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { PublicComponent } from './public.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
-    declarations: [HomeComponent, PublicComponent, AboutUsComponent],
+    declarations: [HomeComponent, PublicComponent, AboutUsComponent, ContactComponent],
     imports: [CommonModule, RouterModule],
     exports: [HomeComponent]
 })
