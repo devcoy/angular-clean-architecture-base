@@ -1,3 +1,4 @@
+import { AuthRoutingModule } from './auth/auth.routing';
 import { PublicRoutingModule } from './@public/public.routing';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -15,7 +16,8 @@ const routes: Routes = [
     imports: [
         RouterModule.forRoot(routes),
         PublicRoutingModule,
-        AdminRoutingModule
+        AdminRoutingModule,
+        AuthRoutingModule
     ],
     exports: [RouterModule]
 })
