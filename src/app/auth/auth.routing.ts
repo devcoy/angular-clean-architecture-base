@@ -1,18 +1,12 @@
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
-import { LoginComponent } from './login/login.component';
-
 const routes: Routes = [
-    {
-        path: 'auth',
-        component: LoginComponent,
-
-        loadChildren: () =>
-            import('./auth-child-routes.module').then(
-                (module) => module.AuthChildRoutesModule
-            )
-    }
+    // { path: '', component:  },
+    { path: 'login', component: LoginComponent },
+    { path: 'register', component: RegisterComponent }
 ];
 
 @NgModule({
