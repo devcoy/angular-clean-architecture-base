@@ -1,0 +1,10 @@
+.panel-left {
+    align-self: center;
+}
+.form-group {
+    margin-top: 1rem;
+}
+label {
+    font-size: 1.1rem;
+    font-weight: 600;
+}

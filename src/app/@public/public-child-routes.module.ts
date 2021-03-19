@@ -1,0 +1,20 @@
+import { ContactComponent } from './contact/contact.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { HomeComponent } from './home/home.component';
+import { PublicComponent } from './public.component';
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+
+const childRoutes: Routes = [
+    // { path: '', component: HomeComponent },
+    { path: '', component: HomeComponent },
+    { path: 'home', component: HomeComponent },
+    { path: 'about-us', component: AboutUsComponent },
+    { path: 'contact', component: ContactComponent }
+];
+
+@NgModule({
+    imports: [RouterModule.forChild(childRoutes)],
+    exports: [RouterModule]
+})
+export class PublicChildRoutesModule {}
