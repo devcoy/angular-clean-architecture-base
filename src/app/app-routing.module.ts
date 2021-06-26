@@ -1,10 +1,8 @@
-import { AuthRoutingModule } from './auth/auth.routing';
-import { PublicRoutingModule } from './@public/public.routing';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-import { PublicModule } from './@public/public.module';
-import { AdminRoutingModule } from './@admin/admin.routing';
+import { AdminRoutingModule } from './ui/@admin/admin.routing';
+import { PublicRoutingModule } from './ui/@public/public.routing';
+import { AuthRoutingModule } from './ui/auth/auth.routing';
 
 const routes: Routes = [
     { path: '', redirectTo: '', pathMatch: 'full' }
