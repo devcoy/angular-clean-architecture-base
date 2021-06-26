@@ -1,9 +1,9 @@
-import { PublicModule } from './@public/public.module';
+import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
+import { PublicModule } from './ui/@public/public.module';
 
 @NgModule({
     declarations: [AppComponent],
