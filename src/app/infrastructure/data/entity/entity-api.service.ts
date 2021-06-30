@@ -9,6 +9,7 @@ import { environment } from '../../../../environments/environment';
  * README
  *
  * En esta class (service) implementamos los métodos que hayamos definido en la abstrac class de la Entity.
+ * Basicamente aqui haremos los request a la API para obtener la data.
  *
  * Aquí estamos extendiendo EntityGateway para así implementar los métodos que hayamos definido en EntityGateway.
  *
@@ -19,7 +20,7 @@ const BASE_URL = environment.apiUrl;
 @Injectable({
     providedIn: 'root'
 })
-export class EntityService extends EntityGateway {
+export class EntityApiService extends EntityGateway {
     constructor(private _httpClient: HttpClient) {
         super();
     }
