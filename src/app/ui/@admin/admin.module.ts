@@ -8,6 +8,12 @@ import { SharedModule } from '../shared/shared.module';
 import { AdminComponent } from './admin.component';
 import { AdminNavbarComponent } from './components/admin-navbar/admin-navbar.component';
 
+/**
+ * README
+ *
+ * Todos los Module se tienene que importar en el app.module para poder ser registrados
+ *
+ */
 @NgModule({
     declarations: [
         AdminComponent,
