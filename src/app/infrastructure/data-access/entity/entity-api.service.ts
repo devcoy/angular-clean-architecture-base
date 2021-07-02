@@ -13,6 +13,7 @@ import { environment } from '../../../../environments/environment';
  *
  * Aquí estamos extendiendo EntityGateway para así implementar los métodos que hayamos definido en EntityGateway.
  *
+ * Recuerda agregar HttpClientModule al app.module para poder usar HttpClient
  */
 
 const BASE_URL = environment.apiUrl;
