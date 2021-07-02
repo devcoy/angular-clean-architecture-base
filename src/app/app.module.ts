@@ -5,10 +5,19 @@ import { NgModule } from '@angular/core';
 
 import { PublicModule } from './ui/@public/public.module';
 import { AdminModule } from './ui/@admin/admin.module';
+import { HttpClientModule } from '@angular/common/http';
+import { DataAccessModule } from './infrastructure/data-access/data-access.module';
 
 @NgModule({
     declarations: [AppComponent],
-    imports: [BrowserModule, AppRoutingModule, PublicModule, AdminModule],
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        DataAccessModule,
+        AppRoutingModule,
+        PublicModule,
+        AdminModule
+    ],
     providers: [],
     bootstrap: [AppComponent]
 })
